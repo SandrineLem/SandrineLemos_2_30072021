@@ -58,14 +58,14 @@ centrer avec le logo---*/
 }
 
 /*Bordure top bleu hebergement ---!!!!!*/
-.borduretop
+.bordertop
 {
 	border-top: 3px solid #0065FC;
 
 }
 
 /*Ajout couleur black a "Activités" -----*/
-.colorlienBla
+.colorlienBlack
 {
 	color: black;
 }
@@ -152,12 +152,7 @@ marges extérieures auto*/
 et aux extrémitées ;
 Aligenement sur un axe secondaire au centre;
  */
-ul
-{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
+
 
 
 /*espacement des 3 liens de 45% de son parent 'contenaire' */
@@ -165,6 +160,9 @@ ul
 {
 	width: 45%;
 	height: 88px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 
