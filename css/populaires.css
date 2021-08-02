@@ -1,0 +1,147 @@
+
+/* Popoulaire  bloc
+-flex initial par rapport a "hebergement 100%"
+- hauteur 650px  
+-margin left " gauche pour avoir de l'espace entre nos deux bloc
+- border radius pour arrondir les bords
+-Fond gris */
+.Sizepopulaire
+{
+    flex: 1;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color:#F2F2F2 ;
+    height: 650px;
+}
+
+
+
+/* bloc  Les plus populaires */
+.blocpopulaire
+{
+	padding-left: 20px;
+	padding-right: 20px;
+
+	
+}
+
+/*Sous bloc ( titre + icons) Les plus populaires */
+.bloctitre
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*Cadre populaire small "sousParent"
+- les elements photos + texte s'aligne horizontalement 
+- les elements aligenement au centre du cadre " Parentgris"
+-Aligenement sur un axe secondaire au centre 
+-Fond blanc
+-Marges marges intérieures 
+-Bordures arrondies
+-Hauteur auto 
+-marges espaces entre les 3 cadres   */
+.smallcadrepop
+{
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	padding: 2% 0 2% 2%;
+	border-radius: 20px;
+	height: auto;
+	margin-bottom: 20px;
+}
+/*TEXTE DESCRIPTION photos dans smallcadre Populaire
+-largeur de 60% du cadre
+-marges intérieues de 5%  */
+.textsmallpop
+{
+	width: 60%;
+	padding-left: 5%;
+}
+
+
+/* sousbloc1 et 2 "Populaire" 
+- flex en colonnes 
+- etirement sur tte la longeure et espace entres eux + extrémitées
+- marges extérieurs   
+*/
+
+.sousblocpop12
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;	
+}
+
+
+
+
+/* Image POPULAIRE "element 1"
+-fond en image avec ajout de l'url de l'image 
+- taille de l'image par rapport à  son element 
+-centrer l'image 
+-bordur de l'image sur les cotés gauche
+-largeur à 35%
+-Hauteur de 160px */
+.imgpopulaire1
+{
+   background-image:url("../images/hebergements/4_small/soleil.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 15px 0 0 15px;
+   width: 35%;
+   height: 160px;
+}
+
+
+
+
+/* Image POPULAIRE "element 2"
+-fond en image avec ajout de l'url de l'image 
+- taille de l'image par rapport à  son element 
+-centrer l'image 
+-bordur de l'image sur les cotés gauche
+-largeur à 35%
+-Hauteur de 160px */
+.imgpopulaire2
+{
+   background-image:url("../images/hebergements/4_small/eau.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 15px 0 0 15px;
+   width: 35%;
+   height: 160px;
+}
+
+/* Image POPULAIRE "element 3"
+-fond en image avec ajout de l'url de l'image 
+- taille de l'image par rapport à  son element 
+-centrer l'image 
+-bordur de l'image sur les cotés gauche
+-largeur à 35%
+-Hauteur de 160px */
+.imgpopulaire3
+{
+   background-image:url("../images/hebergements/4_small/toutbleu.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 15px 0 0 15px;
+   width: 35%;
+   height: 160px;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,206 @@
+----------------------/* Activités a Marseilles */
+--------
+----------
+
+/* Activités a Marseilles Bloc Parent
+-marges extérieures dessus ( laisser de l'espace avec le contenair 1 )
+-marges extérieures en dessous ( laisser de l'espace pour le footer ) */
+
+.Contenair2
+{
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+
+/* Bloc Activités 
+-largeur de 100%
+-hauteur 600px
+-Esapace entres les elements ( pohotos)
+- les elements sont etirés sur toute la longueure avec de l'espace entre eux
+- aligner les elements sur un axe secondaire 
+-
+
+*/
+.Activités
+{
+	width: 100%;
+	height: 600px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* CADRE PHOTO IMG 1 ACTIVITE ------------------- */
+
+/* Image Activité "element 1"
+-fond en image avec ajout de l'url de l'image 
+- taille de l'image par rapport à  son element 
+-centrer l'image 
+-bordur de l'image sur les cotés gauche et droit haut
+-largeur à 100%
+-Hauteur de 530px */
+.imgactivité1
+{
+   background-image:url("../images/activites/3_medium/Port.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 15px 15px 0px 0px;
+   width: 100%;
+   height: 530px;
+}
+
+/*Cadre Activités medium "sousParent"
+- Largeur 23% 
+- Bordure arrondies
+-Effet d'ombre leger 
+-Flex en colonne
+-Etirement sur ttes la longueur de son cadre parent 
+-alignement du bloc dans son bloc parent  */
+.mediumcadrea
+{
+	width: 23%;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px 1px #F2F2F2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+/* Titre photos ajustemenet
+-hauteur 70%
+-largeur 95%
+-flex start pour aligner au debut 
+-alignement sur l'axe secondaire et le centrer 
+-marges intérieures pour l'espace de gauche   */
+.texteactiv
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 95%;
+	height: 70px;
+	padding-left: 5%;
+}
+
+
+/* ---------------------"Bloc des 2 photos en colonne" ------------/*
+- flex en colonnes 
+- etirement sur tte la longeure et espace entres eux + extrémitées
+- marges extérieurs 
+
+Cadre Activités mediumcolonne "sousParent"
+- Largeur 23% 
+- Bordure arrondies
+-Effet d'ombre leger 
+-Flex en colonne
+-Etirement sur ttes la longueur de son cadre parent 
+-alignement du bloc dans son bloc parent   
+*/
+.mediumcadreacolonnecentre 
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px 1px #F2F2F2;
+	justify-content: center;
+}
+
+
+/*Sous bloc des 2 photos en colonne */
+.sousbloccolonne
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 23%;
+	height: 600px;
+}
+
+/* Image Activité "element 2"
+-fond en image avec ajout de l'url de l'image 
+- taille de l'image par rapport à  son element 
+-centrer l'image 
+-bordur de l'image sur les cotés gauche et droit haut
+-largeur à 100%
+-Hauteur de 250px */
+.imgactivité2
+{
+   background-image:url("../images/activites/3_medium/Pomègues.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 15px 15px 0px 0px;
+   width: 100%;
+   height: 250px;
+}
+
+/* Image Activité "element 3"
+-fond en image avec ajout de l'url de l'image 
+- taille de l'image par rapport à  son element 
+-centrer l'image 
+-bordur de l'image sur les cotés gauche et droit haut
+-largeur à 100%
+-Hauteur de 150px */
+.imgactivité3
+{
+   background-image:url("../images/activites/4_small/Frioul.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 15px 15px 0px 0px;
+   width: 100%;
+   height: 150px;
+}
+
+/* Image Activité "element 5"
+-fond en image avec ajout de l'url de l'image 
+- taille de l'image par rapport à  son element 
+-centrer l'image 
+-bordur de l'image sur les cotés gauche et droit haut
+-largeur à 100%
+-Hauteur de 250px */
+.imgactivité5
+{
+   background-image:url("../images/activites/3_medium/Dame.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 15px 15px 0px 0px;
+   width: 100%;
+   height: 200px;
+}
+
+/* Image Activité "element 6"
+-fond en image avec ajout de l'url de l'image 
+- taille de l'image par rapport à  son element 
+-centrer l'image 
+-bordur de l'image sur les cotés gauche et droit haut
+-largeur à 100%
+-Hauteur de 150px */
+.imgactivité6
+{
+   background-image:url("../images/activites/4_small/Lonchamp.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 15px 15px 0px 0px;
+   width: 100%;
+   height: 200px;
+}
+
+/* CADRE PHOTO IMG 4 ACTIVITE ------------------- */
+
+/* Image Activité "element 1"
+-fond en image avec ajout de l'url de l'image 
+- taille de l'image par rapport à  son element 
+-centrer l'image 
+-bordur de l'image sur les cotés gauche et droit haut
+-largeur à 100%
+-Hauteur de 530px */
+.imgactivité4
+{
+   background-image:url("../images/activites/3_medium/Calanques.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 15px 15px 0px 0px;
+   width: 100%;
+   height: 530px;
+}
+

@@ -1,0 +1,175 @@
+/*couleur maquette----
+-----
+------------------------------------>
+ ----------------------------*/
+.colorbleu
+{
+	color: #0065FC;
+}	
+
+.colorbleuclair
+{
+	color: #deebff;
+}	
+
+.colorgrise
+{
+	color: #f2f2f2;
+}	
+
+/* Ajout de la police Raleway ----------------------------------------*/
+
+html, body
+{
+	font-family: 'Raleway', Arial;
+	margin: 0;
+	padding: 0;
+}	
+
+
+/*Ajout de la police à tout le contenu de la page et marges intérieures et extérieures----------------------------*/
+
+body, html,#bloc_page
+{
+	font-family: 'Raleway-Regular', Arial black, Arial
+	margin: 0;
+	padding: 0;
+}
+/*Taille de la police */
+body
+{
+	font-size: 1em;
+}
+ 
+/*LES LIENS ------
+-------
+-----------
+--------------------------------------->*/
+
+/*Taille div des 3 liens ;
+centrer avec le logo---*/
+.sizeliens
+{
+	width: 140px;
+	height: 88px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Bordure top bleu hebergement ---!!!!!*/
+.borduretop
+{
+	border-top: 3px solid #0065FC;
+
+}
+
+/*Ajout couleur black a "Activités" -----*/
+.colorlienBla
+{
+	color: black;
+}
+
+/*Lien "Activité"" bordur survol souris bleu----- */
+.hover1:hover
+{
+    border-top: 3px solid #0065FC;
+}
+/*Lien "Activité"" ecriture bleu au survol souris----- */
+.hovercolor1:hover
+{
+	color: #0065FC;
+}
+
+/*couleur "bleu" sur lien herbergement et s'inscrire ---§§§*/
+.colorlien
+{
+	color: #0065FC;
+	font-weight: bold;
+}
+
+
+/*desactivation de la decoration des liens ( soulignement) */
+a{
+	text-decoration: none;
+}
+
+/*Ajout bordur texte en gras  au survol du lien "Activité" ------>*/
+.element3{
+	font-weight: bold;
+}
+
+/*enlement des puces list
+blocs alignés a la fin-----------> */
+ul
+{
+	list-style-type: none;
+	justify-content: flex-end;
+}	
+
+
+
+/*LES BLOCS STRUCTURATION -------
+---------------
+---------
+------
+--->>>>>>>>>>*/
+
+
+/*Elements se place sur une meme ligne ;
+Etirement des blocs sur toute la longueur avec de l'espace entres eux 
+Centrer les elements sur une ligne ;
+Maximum largueur 1440px 
+marges extérieures auto*/
+.header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px;
+	padding: auto;
+	height: 60px;	
+}
+
+/*Taille bloc img */
+.headerimg
+{
+	width: 161px;
+	height: 45px;
+}
+
+/*Taille LOGO ----------->*/
+.logo
+{
+	width: 97px;
+	height: 45px;
+	display: flex;
+}
+
+
+/* Les elements sont placés sur une meme ligne ;
+ Etirement sur toute la largeur avec de l'espace entre eux 
+et aux extrémitées ;
+Aligenement sur un axe secondaire au centre;
+ */
+ul
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+/*espacement des 3 liens de 45% de son parent 'contenaire' */
+.navbar
+{
+	width: 45%;
+	height: 88px;
+}
+
+
+/*FIN HEADER -------
+--------------------------
+-------------->*/
+
+
