@@ -1,28 +1,22 @@
-----------------------/* Activités a Marseilles */
---------
-----------
+/*Activités a Marseilles*/
 
-/* Activités a Marseilles Bloc Parent
--marges extérieures dessus ( laisser de l'espace avec le contenair 1 )
--marges extérieures en dessous ( laisser de l'espace pour le footer ) */
-
+/*Activités a Marseilles Bloc Parent
+-marges extérieures dessus (laisser de l'espace avec le contenair 1)
+-marges extérieures en dessous (laisser de l'espace pour le footer)*/
 .Contenair2
 {
 	margin-top:50px;
 	margin-bottom:50px;
 }
 
-
-/* Bloc Activités 
+/*Bloc Activités 
 -largeur de 100%
 -hauteur 600px
--Esapace entres les elements ( pohotos)
+-Esapace entres les elements (photos)
 - les elements sont etirés sur toute la longueure avec de l'espace entre eux
-- aligner les elements sur un axe secondaire 
--
+- aligner les elements sur un axe secondaire*/
 
-*/
-.Activités
+.Activitees
 {
 	width: 100%;
 	height: 600px;
@@ -31,32 +25,14 @@
 	align-items: center;
 }
 
-/* CADRE PHOTO IMG 1 ACTIVITE ------------------- */
-
-/* Image Activité "element 1"
--fond en image avec ajout de l'url de l'image 
-- taille de l'image par rapport à  son element 
--centrer l'image 
--bordur de l'image sur les cotés gauche et droit haut
--largeur à 100%
--Hauteur de 530px */
-.imgactivité1
-{
-   background-image:url("images/activites/3_medium/Port.jpg");
-   background-size: cover;
-   background-position: center;
-   border-radius: 15px 15px 0px 0px;
-   width: 100%;
-   height: 530px;
-}
-
 /*Cadre Activités medium "sousParent"
 - Largeur 23% 
 - Bordure arrondies
 -Effet d'ombre leger 
 -Flex en colonne
 -Etirement sur ttes la longueur de son cadre parent 
--alignement du bloc dans son bloc parent  */
+-alignement du bloc dans son bloc parent
+-passage de la souris*/
 .mediumcadrea
 {
 	width: 23%;
@@ -65,13 +41,15 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	cursor: pointer;
 }
-/* Titre photos ajustemenet
+
+/*Titre photos ajustemenet
 -hauteur 70%
 -largeur 95%
 -flex start pour aligner au debut 
 -alignement sur l'axe secondaire et le centrer 
--marges intérieures pour l'espace de gauche   */
+-marges intérieures pour l'espace de gauche*/
 .texteactiv
 {
 	display: flex;
@@ -83,19 +61,14 @@
 }
 
 
-/* ---------------------"Bloc des 2 photos en colonne" ------------/*
-- flex en colonnes 
-- etirement sur tte la longeure et espace entres eux + extrémitées
-- marges extérieurs 
-
+/*"Bloc des 2 photos en colonne"
 Cadre Activités mediumcolonne "sousParent"
 - Largeur 23% 
 - Bordure arrondies
 -Effet d'ombre leger 
 -Flex en colonne
 -Etirement sur ttes la longueur de son cadre parent 
--alignement du bloc dans son bloc parent   
-*/
+-alignement du bloc dans son bloc parent*/
 .mediumcadreacolonnecentre 
 {
 	display: flex;
@@ -107,7 +80,7 @@ Cadre Activités mediumcolonne "sousParent"
 }
 
 
-/*Sous bloc des 2 photos en colonne */
+/*Sous bloc des 2 photos en colonne*/
 .sousbloccolonne
 {
 	display: flex;
@@ -115,18 +88,50 @@ Cadre Activités mediumcolonne "sousParent"
 	justify-content: space-between;
 	width: 23%;
 	height: 600px;
+	cursor: pointer;
 }
 
-/* Image Activité "element 2"
+
+/*desactivation de la decoration des liens et couleur noir texte( soulignement)*/
+a
+{
+	text-decoration: none;
+	color: black;
+}
+
+
+
+
+/*CADRE PHOTO IMG 1 ACTIVITE*/
+
+/*Image Activité "element 1"
 -fond en image avec ajout de l'url de l'image 
 - taille de l'image par rapport à  son element 
 -centrer l'image 
 -bordur de l'image sur les cotés gauche et droit haut
 -largeur à 100%
--Hauteur de 250px */
-.imgactivité2
+-Hauteur de 530px */
+.imgactivite1
 {
-   background-image:url("images/activites/3_medium/Pomègues.jpg");
+   background-image:url("../images/activites/3_medium/Port.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 15px 15px 0px 0px;
+   width: 100%;
+   height: 530px;
+}
+
+
+/*Image Activité "element 2"
+-fond en image avec ajout de l'url de l'image 
+- taille de l'image par rapport à  son element 
+-centrer l'image 
+-bordur de l'image sur les cotés gauche et droit haut
+-largeur à 100%
+-Hauteur de 250px*/
+.imgactivite2
+{
+   background-image:url("../images/activites/3_medium/Pomègues.jpg");
    background-size: cover;
    background-position: center;
    border-radius: 15px 15px 0px 0px;
@@ -134,16 +139,16 @@ Cadre Activités mediumcolonne "sousParent"
    height: 250px;
 }
 
-/* Image Activité "element 3"
+/*Image Activité "element 3"
 -fond en image avec ajout de l'url de l'image 
 - taille de l'image par rapport à  son element 
 -centrer l'image 
 -bordur de l'image sur les cotés gauche et droit haut
 -largeur à 100%
--Hauteur de 150px */
-.imgactivité3
+-Hauteur de 150px*/
+.imgactivite3
 {
-   background-image:url("images/activites/4_small/Frioul.jpg");
+   background-image:url("../images/activites/4_small/Frioul.jpg");
    background-size: cover;
    background-position: center;
    border-radius: 15px 15px 0px 0px;
@@ -151,16 +156,16 @@ Cadre Activités mediumcolonne "sousParent"
    height: 150px;
 }
 
-/* Image Activité "element 5"
+/*Image Activité "element 5"
 -fond en image avec ajout de l'url de l'image 
 - taille de l'image par rapport à  son element 
 -centrer l'image 
 -bordur de l'image sur les cotés gauche et droit haut
 -largeur à 100%
--Hauteur de 250px */
-.imgactivité5
+-Hauteur de 250px*/
+.imgactivite5
 {
-   background-image:url("images/activites/3_medium/Dame.jpg");
+   background-image:url("../images/activites/3_medium/Dame.jpg");
    background-size: cover;
    background-position: center;
    border-radius: 15px 15px 0px 0px;
@@ -168,16 +173,16 @@ Cadre Activités mediumcolonne "sousParent"
    height: 200px;
 }
 
-/* Image Activité "element 6"
+/*Image Activité "element 6"
 -fond en image avec ajout de l'url de l'image 
 - taille de l'image par rapport à  son element 
 -centrer l'image 
 -bordur de l'image sur les cotés gauche et droit haut
 -largeur à 100%
--Hauteur de 150px */
-.imgactivité6
+-Hauteur de 150px*/
+.imgactivite6
 {
-   background-image:url("images/activites/4_small/Lonchamp.jpg");
+   background-image:url("../images/activites/4_small/Lonchamp.jpg");
    background-size: cover;
    background-position: center;
    border-radius: 15px 15px 0px 0px;
@@ -185,7 +190,7 @@ Cadre Activités mediumcolonne "sousParent"
    height: 200px;
 }
 
-/* CADRE PHOTO IMG 4 ACTIVITE ------------------- */
+/*CADRE PHOTO IMG 4 ACTIVITE*/
 
 /* Image Activité "element 1"
 -fond en image avec ajout de l'url de l'image 
@@ -193,10 +198,10 @@ Cadre Activités mediumcolonne "sousParent"
 -centrer l'image 
 -bordur de l'image sur les cotés gauche et droit haut
 -largeur à 100%
--Hauteur de 530px */
-.imgactivité4
+-Hauteur de 530px*/
+.imgactivite4
 {
-   background-image:url("images/activites/3_medium/Calanques.jpg");
+   background-image:url("../images/activites/3_medium/Calanques.jpg");
    background-size: cover;
    background-position: center;
    border-radius: 15px 15px 0px 0px;

@@ -1,0 +1,381 @@
+/*couleur maquette----
+-----
+------------------------------------>
+ ----------------------------*/
+.colorbleu
+{
+	color: #0065FC;
+}	
+
+.colorbleuclair
+{
+	color: #deebff;
+}	
+
+.colorgrise
+{
+	color: #f2f2f2;
+}	
+
+/*Ajout de la police à tout le contenu de la page et marges intérieures et extérieures----------------------------*/
+
+body, html,#bloc_page
+{
+	font-family: Raleway-Regular, Arial, Arial;
+	margin: 0;
+	padding: 0;
+}
+ 
+/*LES blocs  */
+
+
+/* Bloc parent espacement des 3 liens et du logo  */
+.sousbloc1
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* taille du bloc nav */
+.navbloctaille
+{
+	height: auto;
+}
+
+
+/*flex box pour le Bloc des 3 liens ;
+centrer avec le logo---*/
+.blocliens
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+/*Largeur  Bloc du logo et des 3 liens ;
+centrer avec le logo---*/
+.taillebloclien
+{
+	width: 100%;
+}
+/* sous bloc ( bloc de chaque lien )  */
+.sousbloclien
+{
+	width: 140px;
+	height: 99px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* Bloc Herbergement + activites pour faire le responsive  */
+.blochebergact
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 60%;
+}
+
+/*Taille png logo */
+.logo
+{
+	width: 120px;
+	height: 50px;
+	margin: 10px;
+}
+
+/*Bordure top bleu hebergement*/
+.bordertop
+{
+	border-top: 3px solid #0065FC;
+}
+
+
+
+/*Ajout couleur black a "Activités"*/
+.colorlienBlack
+{
+	color: black;
+}
+
+/*Lien "Activité"" bordur survol souris bleu*/
+.hover1:hover
+{
+    border-top: 3px solid #0065FC;
+}
+
+/*Bordure top et couleur bleu bleu s'inscrire*/
+.bordertoptransp
+{
+	border-top:3px solid transparent;
+}
+
+/*Lien "Activité"" ecriture bleu au survol souris */
+.hovercolor1:hover
+{
+	color: #0065FC;
+}
+
+/*Lien "s'inscrire" ecriture bleufoncé au survol souris */
+.hovercolor2:hover
+{
+	color: #0065FC;
+	font-weight: bold;
+}
+
+/*couleur "bleu" sur lien herbergement et s'inscrire*/
+.colorlien
+{
+	color: #0065FC;
+}
+
+
+/*desactivation de la decoration des liens ( soulignement) */
+a
+{
+	text-decoration: none;
+}
+
+/*Responsive  */
+
+
+@media screen and (max-width: 1290px)
+{
+	/*Bloc Navigation Herg-Act */
+	.blochebergact
+	{
+		margin-left: 35%;
+	}
+}	
+
+.Sizehebergement
+{
+	min-height: auto;
+}	
+
+
+
+
+
+
+
+
+
+
+/*Flex pour les collones des filtres */
+
+@media screen and ( max-width: 1100px )
+
+{ 
+	.Filtreflex/* Flex pour les collones des filtres */
+	{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.filtreflexwrapresp /* Flex pour les collones da partir du bloc 2 */
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.filtres-iconsles4/* Espace entre les les filtres */
+	{
+		margin-bottom: 20px;
+	}
+
+
+
+
+
+	.contenairesponsive/* le Bloc parent de hebergement et populaire en colone reverse pour passer 
+	populaire au dussus de hebergement  */
+	{
+		flex-direction: column-reverse;
+		width: 100%;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.Sizepopulaire/*  ajuster nos nouvelles tailles */
+	{
+		
+		width: 80%;
+		margin-left: 0;
+		padding: 5%;
+	}
+
+	.blochebergementresp
+	/* ajuster nos nouvelles tailles */                                                                                                                         /* Bloc hebergement on retire le flex 2 pour ajuster nos nouvelles tailles */
+	{
+		display:none ;
+		width: 84.5%;
+		margin-top: 50px;
+		padding: 5%;
+
+	}
+
+}
+
+/*correction pour plus petits ecrans */
+@media screen and ( max-width: 880px )
+{
+	.navbloctaille/*Barre de navigation ajustement largeur  */
+	{
+		width: 90%; /*Barre de navigation ajustement largeur  */
+	}
+
+	.blochebergact
+	{
+		margin-left: 20%; /* Marges extérieur de 20% remis  */
+	}
+
+	.blochebergementresp
+	{
+		height: auto;
+	}
+
+	.sousbloc1heb
+	{
+		flex-direction: column;
+
+	}
+	.sousbloc2heb
+	{
+		flex-direction: column;
+	}
+	.smallcadre
+	{
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.textsmallhebergement
+	{
+		min-height: auto;
+	}
+	.textsmallpop
+	{
+		min-height: auto;
+	}
+	.Activitees
+	{
+		flex-direction: column;
+		height: auto;
+		align-items: center;
+		margin-left:10px ;
+		margin-right:10px ;
+	}
+	.sousbloccolonne
+	{
+		width: 100%;
+		height: auto;
+		margin-bottom: 50px;
+	}
+	.mediumcadreacolonnecentre
+	{
+		width: 100%;
+		height: auto;
+		margin-bottom: 50PX;
+	}
+	.mediumcadrea
+	{
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.imgactivite1,.imgactivite2,.imgactivite3,.imgactivite4,.imgactivite5,.imgactivite6
+	{
+		height: 200px;
+	}
+	.cadrefooter
+	{
+		flex-direction: column;
+		align-items: flex-start;
+		height: auto;
+		margin-left: 10px;
+		margin-right:10px ;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 600px)
+{
+	.blochebergact
+	{
+		order: 1;
+		width: 100%;
+		margin-left: 0;
+	}
+	.blocnavmobile
+	{
+		width: 50%;
+		
+	}
+	.sousbloc1
+	{
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;	
+	}
+	.blocnavmobile :hover
+	{
+		border-top: 0;;
+	}
+	.hover1:hover
+	{
+		border-bottom:3px solid #0065FC ;
+		border-top: 0;
+	}
+	.bordertop
+	{
+		border-top: 0;
+		border-bottom: 3px solid #0065FC;
+	}
+/* marge section search  " Trouvez ....." */
+	.search
+	{
+		margin-left: 20px;
+	}
+/* marge reduction  */
+	.cadreseach
+	{
+		margin-left: 40px;
+	}
+	
+	.boutonrecherche
+	{
+		width: 50px;
+	}
+	.iconsnone
+	{
+		display: none;
+	}
+	.versionmobile
+	{
+		 visibility: visible;
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

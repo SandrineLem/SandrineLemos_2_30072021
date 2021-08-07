@@ -1,0 +1,223 @@
+
+/*Ajout de la taille des liens*/
+.sizeliens
+{
+	font-size: medium;  
+}
+
+
+/*section recherche*/
+/*Ajout de la taille des liens*/
+.sizeliens
+{
+    font-size: medium;  
+}
+
+
+/*section recherche*/
+
+/*cadre Rechercher 
+Largeur et hauteur - flex */
+.cadreseach
+{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.borderseach
+{
+    width: 400px;
+    border-radius: 10px;
+    
+}
+/*cadre Geocalisation */
+
+.iconsize
+{
+    height: 50px;
+    width: 50px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+}
+/* CADRE RECHERCHER "Searchcadre"*/
+
+.recherche
+{
+    height: 50px;
+    width: 230px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+
+}
+/* bordure du cadre rechercher  */
+.bordurcadrerecherche
+{
+    border:0.5px solid #f2f2f2;    
+}
+
+
+/*espaceleger entre le cadre et le bouton  */
+.paddingsearch
+{
+    padding-left: 20px;   
+}
+
+/* " Bouton de recherche " --------------------------------- */
+.boutonrecherche
+{
+  background-color: #0065FC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  max-width: 120px;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+/*texte rechercher visible version descktop */
+.iconsnone
+{
+    visibility: visible;
+}
+/* icon loop none pour descktop  */
+.versionmobile
+{
+   display: none;
+}
+/*LES FILTRES------------->
+---------------->
+------------------------------------------------------------------------> */
+
+/* Cadre filtres Parents
+- Aligenement Flex horizontal 
+- Centrer les elements sur la ligne
+- marge haut extérieur du cadre pour l'espacer avec le cadre parent de rechercher
+- marge haut extérieur du cadre pour l'espacer avec le cadre parent de rechercher
+- flex wrap pour que le cadre ailles a la ligne en resserant la page */
+.Filtres
+{
+    margin-top: 50px;
+    margin-bottom: 40px;   
+}
+.Filtreflex
+{
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+}
+
+.Filtreflexaround
+{
+    display: flex;
+    justify-content: space-around;
+}
+/*  Cadres des 4 filtres avec les icons et le texte
+- cadre gris 
+- Hauteur de 50px
+- Arrondie des angles 
+- Espacement entre chaque cadre de 20px
+- flex horizontal
+- Etirement du texte dans le cadre et espace entre eux
+- Centrer les les élemement dans leur cadre 
+- Changement de la fleche de la souris 
+- ---------------------------  */
+.filtres-iconsles4
+{
+    border: 2px solid #F2F2F2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    cursor: pointer;
+}
+
+
+/* Texte des filtres 
+- Hauteur de 50px
+- Marge intérieurs des deux cotés ( pour l'espace dans le cadre )
+- bordur arrondie en haut droit et en bas a droite 
+- flex pour centre le texte dans le cadre */
+.textefiltre
+{
+    height: 50px;
+    padding-left:20px;
+    padding-right:20px ;
+    border-radius: 0 25px 25px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* logo des filtres 
+- Bordure arrondies 
+- Largeur
+- Hauteur
+- Couleur
+- Fond couleur 
+- Flex box ( aligner )
+- Flex box ( centrer ) 
+- marge à gauche en moins ( pour les decaler ) */
+.filtreicon
+{
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065fc;
+    background-color: #deebfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2px;
+}
+
+/* Ajout de l'apparance bleu au survole des filtres sur le texte de chaque filtre   */
+.filtres-iconsles4:hover >.textefiltre
+{
+    color: #0065fc;
+}
+
+/* Ajout de l'apparance bleu au survole des filtres sur le logo de chaque filtre   */
+.filtres-iconsles4:hover>.filtreicon
+{
+    color: white;
+    background-color: #0065fc;
+}
+ .filtretilte
+ {
+    margin-right: 20px;
+ }
+
+/* TEXTE INFORMATION "FIN DE SECTION"  -------------> */
+.Informationbloc
+{
+    display: flex;
+    align-items: baseline;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}    
+
+/* LOGO INFORMATION "  -------------> */
+.Infologo
+{ 
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    background: #FFFFFF;
+    color:  #0065FC;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-right: 10px;
+}
