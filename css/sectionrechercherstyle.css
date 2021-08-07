@@ -87,9 +87,9 @@ Largeur et hauteur - flex */
     visibility: visible;
 }
 /* icon loop none pour descktop  */
-.versionmobile
+.boutonrecherche .fa-search
 {
-   display: none;
+    display: none;
 }
 /*LES FILTRES------------->
 ---------------->

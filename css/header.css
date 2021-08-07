@@ -348,10 +348,9 @@ a
 	{
 		display: none;
 	}
-	.versionmobile
+	.boutonrecherche .fa-search
 	{
-		 visibility: visible;
-
+    visibility: visible;
 	}
 }
 
