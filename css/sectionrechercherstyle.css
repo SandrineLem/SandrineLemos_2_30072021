@@ -1,119 +1,96 @@
-/* Texte Police  */
 
-*
-{
-    font-family: 'Raleway', Arial;
-}
-
-
-/*Taille titre h1 et en gras */
-
-h1
-{
-	font-weight: 900;
-}
-
-/*Taille titre h2 et en gras */
-h2
-{
-    font-weight: 900;
-}
-
-/*Taille  paragraphe  ---------*/
-p
-{
-	font-size:small ;
-}
-h3
-{
-    
-    font-weight: 900;
-}
-
-/*Ajout de la taille des liens  ------------------------------*/
+/*Ajout de la taille des liens*/
 .sizeliens
 {
-	font-size: medium;
-    font-weight: 800;
+	font-size: medium;  
 }
 
 
-/*section recherche----
-----------
------------------------------------------------------->>>>>>>>>>*/
+/*section recherche*/
+/*Ajout de la taille des liens*/
+.sizeliens
+{
+    font-size: medium;  
+}
+
+
+/*section recherche*/
 
 /*cadre Rechercher 
-Largeur et hauteur - display inline */
-.searchnav
-{
-    line-height: 1.15;
-    display: inline-flex;
-    max-width: 100%;
-    overflow: auto;
+Largeur et hauteur - flex */
+.cadreseach
+{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
-/*cadre Geocalisation---------------------------------------  */
-.cadregeo
+.borderseach
 {
-    line-height: 1.15;
+    width: 400px;
+    border-radius: 10px;
     
-    background-color: #F2F2F2;
-    padding: 1rem 1.25rem;
-    border-radius: 1rem 0 0 1rem;
-    text-align: center;
 }
-/*Icone Geocalisation --------------------------------------- */
-.iconsgeo
-{
-    text-align: center;
-    display: inline-block;
-    font-style: normal;
-    cursor: pointer;
-    font-weight:700;
-}
-/* CADRE RECHERCHER "Searchcadre" ---------------------------- */
+/*cadre Geocalisation */
 
-.searchcadre
+.iconsize
 {
-    margin: 0;
-    overflow: auto;
-    border-right: none;
-    border-left: none;
-    border-top: #F2F2F2 1px solid;
-    border-bottom: #F2F2F2 1px solid;
-    padding: 0 1.5rem;
-    box-sizing: border-box;
-    width: 225px;
     height: 50px;
-    font-size: 1rem;
-    font-weight: bold;    
+    width: 50px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+}
+/* CADRE RECHERCHER "Searchcadre"*/
+
+.recherche
+{
+    height: 50px;
+    width: 230px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+
+}
+/* bordure du cadre rechercher  */
+.bordurcadrerecherche
+{
+    border:0.5px solid #f2f2f2;    
+}
+
+
+/*espaceleger entre le cadre et le bouton  */
+.paddingsearch
+{
+    padding-left: 20px;   
 }
 
 /* " Bouton de recherche " --------------------------------- */
-.btnsearch
+.boutonrecherche
 {
-    
-    color: #FFFFFF;
-    font-weight: bold;
-    background-color: #0065FC;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 1rem;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 1rem;
-    padding-top: 0px;
-    padding-right: 1.5rem;
-    padding-bottom: 0px;
-    padding-left: 1.5rem;
-    margin: 0;
-    height: 50px;
-    align-items: flex-start;
-    font-size: 100%;
-    font-weight: bold;
-    border:none ;
-    cursor: pointer;
+  background-color: #0065FC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  max-width: 120px;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+  padding-right: 5px;
+  padding-left: 5px;
 }
-
+/*texte rechercher visible version descktop */
+.iconsnone
+{
+    visibility: visible;
+}
+/* icon loop none pour descktop  */
+.versionmobile
+{
+   display: none;
+}
 /*LES FILTRES------------->
 ---------------->
 ------------------------------------------------------------------------> */
@@ -126,14 +103,21 @@ Largeur et hauteur - display inline */
 - flex wrap pour que le cadre ailles a la ligne en resserant la page */
 .Filtres
 {
-    
+    margin-top: 50px;
+    margin-bottom: 40px;   
+}
+.Filtreflex
+{
     display: flex;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
+.Filtreflexaround
+{
+    display: flex;
+    justify-content: space-around;
+}
 /*  Cadres des 4 filtres avec les icons et le texte
 - cadre gris 
 - Hauteur de 50px
@@ -146,7 +130,6 @@ Largeur et hauteur - display inline */
 - ---------------------------  */
 .filtres-iconsles4
 {
-    
     border: 2px solid #F2F2F2;
     height: 50px;
     border-radius: 30px;
@@ -214,3 +197,27 @@ Largeur et hauteur - display inline */
  {
     margin-right: 20px;
  }
+
+/* TEXTE INFORMATION "FIN DE SECTION"  -------------> */
+.Informationbloc
+{
+    display: flex;
+    align-items: baseline;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}    
+
+/* LOGO INFORMATION "  -------------> */
+.Infologo
+{ 
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    background: #FFFFFF;
+    color:  #0065FC;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin-right: 10px;
+}

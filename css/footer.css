@@ -1,14 +1,13 @@
 
-/* ------------------------Footer------------------------ */
+/*Footer*/
 
 
-/* Cadre du Footer PARENT
+/*Cadre du Footer PARENT
 -Fond gris 
 -Hauteur 
 -marge extérieurs du dessus pour faire l'espace avec section activité 
 -Flex pour les aligner en hoirizontale 
--Etirement sur tout la longeur avec de l'espace entre eux 
--  */
+-Etirement sur tout la longeur avec de l'espace entre eux*/
 .cadrefooter
 {
 	background-color:#F2F2F2;
@@ -20,10 +19,10 @@
 	
 }
 
-/* Sous Cadre footer 
+/*Sous Cadre footer 
 -Hauteur
 -largeur 30% (pour le petit décalage)
--Marge   */
+-Marge*/
 
 .sousblocfooter
 {
@@ -31,10 +30,3 @@
 	width: 45%;
 	margin-left: 5%;
 }
-
-
-
-
-
-
-
