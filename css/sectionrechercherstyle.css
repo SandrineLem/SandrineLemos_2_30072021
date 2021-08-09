@@ -63,7 +63,7 @@ Largeur et hauteur - flex */
 .bordurcadrerecherche
 {
     border:0.5px solid #f2f2f2;
-    border-right: 0.5 transparent #FFFFFF;    
+    border-right:0 transparent #FFFFFF;    
 }
 
 
