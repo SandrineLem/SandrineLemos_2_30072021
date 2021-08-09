@@ -8,6 +8,8 @@ et extrémitées
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 15px;
+    padding-right: 15px;
 }
 
 
@@ -23,6 +25,7 @@ et extrémitées
     flex: 2;
     height: 650px;
     margin-right: 20px;
+    padding-top: 20px;
     border-radius: 10px;
     background-color:#F2F2F2 ;
  }    
@@ -92,7 +95,10 @@ et extrémitées
     box-shadow: 0 0 16px #0000002e;
     cursor: pointer;
 }
-
+.smallcadre:hover
+{
+    transform: scale(1.1);
+}
 /*desactivation de la decoration des liens et couleur noir texte( soulignement) */
 a
 {
@@ -112,6 +118,7 @@ a
 .textefonce
 {
     font-weight: bold;
+    padding-bottom: 20px;
 }
 
 /* Image HEBERGEMENT "element 1"
@@ -216,4 +223,64 @@ a
    height: 120px;
 }
 
+/*Responsive */
+@media screen and (max-width: 1290px) /*Ajout d'une hauteur minimum automatique pour le bloc hebergement  */
+{
+    .Sizehebergement
+    {
+    min-height: auto;
+    }   
+} 
 
+@media screen and ( max-width: 1100px )/*Breakpoint pour ajustement des blocs */
+
+{ 
+    .contenairesponsive/* le Bloc parent de hebergement et populaire en colone reverse pour passer 
+    populaire au dussus de hebergement  */
+    {
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+    .blochebergementresp
+    /* ajuster nos nouvelles tailles */                                                                                                                         /* Bloc hebergement on retire le flex 2 pour ajuster nos nouvelles tailles */
+    {
+        width: 84.5%;
+        margin-top: 50px;
+        margin-left:2px ;
+        margin-right: 2px;
+    }
+}
+
+
+@media screen and ( max-width: 880px )/*correction pour plus petits ecrans */
+{
+    .blochebergementresp/* Hauteur automatique */
+    {
+        height: auto;
+    }
+
+    .sousbloc1heb/* Changement de la position du sousbloc1 hebergement pour les cadre photos  */
+    {
+        flex-direction: column;
+
+    }
+    .sousbloc2heb/* Changement de la position du sousbloc2 hebergement pour les cadre photos*/
+    {
+        flex-direction: column;
+    }
+    .smallcadre/* cadre photo largeur a 100% pour qu'il occupe tout l'espace de son bloc( sous boc 1 et 2 ) */
+    {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .textsmallhebergement/* Minimun d'hauteur automatique pour la decription des cartes */
+    {
+        min-height: auto;
+    }
+    .Sizehebergement/* Suppression du fond gris pour le bloc hebergement */
+    {
+        background-color:#FFFFFF;
+    }
+ }

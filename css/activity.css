@@ -7,6 +7,8 @@
 {
 	margin-top:50px;
 	margin-bottom:50px;
+	padding: 15px;
+	padding-right: 15px;
 }
 
 /*Bloc Activités 
@@ -23,6 +25,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-right: 25px;
+	margin-left: 25px;
 }
 
 /*Cadre Activités medium "sousParent"
@@ -43,7 +47,10 @@
 	justify-content: center;
 	cursor: pointer;
 }
-
+.mediumcadrea:hover
+{
+    transform: scale(1.1);
+}
 /*Titre photos ajustemenet
 -hauteur 70%
 -largeur 95%
@@ -78,7 +85,10 @@ Cadre Activités mediumcolonne "sousParent"
 	box-shadow: 5px 5px 5px 1px #F2F2F2;
 	justify-content: center;
 }
-
+.mediumcadreacolonnecentre:hover
+{
+    transform: scale(1.1);
+}
 
 /*Sous bloc des 2 photos en colonne*/
 .sousbloccolonne
@@ -208,4 +218,46 @@ a
    width: 100%;
    height: 530px;
 }
+
+/*Responsive */
+
+@media screen and ( max-width: 880px )/*correction pour plus petits ecrans */
+{
+	.Activitees/*Bloc activitees changement de direction  */
+	{
+		flex-direction: column;
+		height: auto;
+		align-items: center;
+		margin-left:20px ;
+		margin-right:20px ;
+	}
+	.sousbloccolonne/*Sous "bloccolonne" d'activitees ajustement hauteur auto marge en dessous pour espacer les cadres photos */
+	{
+		width: 100%;
+		height: auto;
+		margin-bottom: 40px;
+	}
+	.mediumcadreacolonnecentre/*Sous "bloccolonne centre" d'activitees ajustement hauteur auto marge en dessous pour espacer les cadres photos */
+	{
+		width: 100%;
+		height: auto;
+		margin-bottom: 40px;
+	}
+	.mediumcadrea/* Cadre photo largeur 100% pour qu'il occupe tout l'espace et mage du dessous pour espacer les deux sousblocs  */
+	{
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.imgactivite1,.imgactivite2,.imgactivite3,.imgactivite4,.imgactivite5,.imgactivite6/* Ajustement de la hauteur des photos  */
+	{
+		height: 200px;
+	}
+	.titreactiviteess
+	{
+		padding-left: 20px;
+	}
+}
+
+
+
 

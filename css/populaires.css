@@ -12,7 +12,8 @@
     border-radius: 10px;
     background-color:#F2F2F2 ;
     padding-left: 20px;
-    padding-right: 20px;  
+    padding-right: 20px; 
+    padding-bottom: 20px;
 }
 
 
@@ -47,6 +48,10 @@
 	height: 100%;
 	box-shadow: 0 0 16px #0000002e;
 	cursor: pointer;
+}
+.smallcadrepop:hover
+{
+    transform: scale(1.1);
 }
 /*TEXTE DESCRIPTION photos dans smallcadre Populaire
 -largeur de 60% du cadre
@@ -131,4 +136,56 @@ a
    width: 35%;
    height: 160px;
 }
+
+
+/*Responsive */
+
+@media screen and ( max-width: 1100px ) /*Breakpoint pour ajustement des blocs */
+
+{ 
+	.Sizepopulaire/*  ajuster nos nouvelles tailles */
+	{
+		
+		width: 80%;
+		margin-left: 0;
+		padding: 5%;
+	}
+}
+
+
+@media screen and ( max-width: 880px )/*correction pour plus petits ecrans */
+{
+	.textsmallpop/*Minimum hauteur automatique */
+	{
+		min-height: auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

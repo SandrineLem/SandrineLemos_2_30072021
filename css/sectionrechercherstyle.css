@@ -1,4 +1,11 @@
-
+.entete-section
+{
+    padding:0 ;
+}
+.rechercheSectionTitle
+{
+    margin-bottom: -50px;
+}
 /*Ajout de la taille des liens*/
 .sizeliens
 {
@@ -12,7 +19,6 @@
 {
     font-size: medium;  
 }
-
 
 /*section recherche*/
 
@@ -56,14 +62,15 @@ Largeur et hauteur - flex */
 /* bordure du cadre rechercher  */
 .bordurcadrerecherche
 {
-    border:0.5px solid #f2f2f2;    
+    border:0.5px solid #f2f2f2;
+    border-right: 0.5 transparent #FFFFFF;    
 }
 
 
 /*espaceleger entre le cadre et le bouton  */
 .paddingsearch
 {
-    padding-left: 20px;   
+    padding-left: 20px; 
 }
 
 /* " Bouton de recherche " --------------------------------- */
@@ -78,19 +85,28 @@ Largeur et hauteur - flex */
   color: white;
   cursor: pointer;
   border-radius: 0 10px 10px 0;
-  padding-right: 5px;
-  padding-left: 5px;
+  border-bottom: 1px solid #0065FC;
+  border-top: 1px solid #0065FC;
+  border-right: 1px solid #0065FC;
+  border-left: 1px solid #0065FC;
+
+}
+.search
+{
+    padding: 15px;
 }
 /*texte rechercher visible version descktop */
 .iconsnone
 {
     visibility: visible;
+    padding-left: 10px;
+}
+.versionmobile
+{
+    visibility: hidden;
 }
 /* icon loop none pour descktop  */
-.boutonrecherche .fa-search
-{
-    display: none;
-}
+
 /*LES FILTRES------------->
 ---------------->
 ------------------------------------------------------------------------> */
@@ -193,6 +209,7 @@ Largeur et hauteur - flex */
     color: white;
     background-color: #0065fc;
 }
+
  .filtretilte
  {
     margin-right: 20px;
@@ -203,8 +220,7 @@ Largeur et hauteur - flex */
 {
     display: flex;
     align-items: baseline;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
 }    
 
 /* LOGO INFORMATION "  -------------> */
@@ -221,3 +237,70 @@ Largeur et hauteur - flex */
     justify-content: center;
      margin-right: 10px;
 }
+
+
+
+/*Responsive */
+
+@media screen and ( max-width: 1100px )/*Flex pour les collones des filtres */
+
+{ 
+    .Filtreflex/* Flex pour les collones des filtres */
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filtreflexwrapresp /* Flex pour les collones da partir du bloc 2 */
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filtres-iconsles4/* Espace entre les les filtres */
+    {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px)/* "Responsive sur les plus petits écrans " */
+{
+    .search/* marge section search  " Trouvez ....." */
+    {
+        margin-left: 20px;
+    }
+    .cadreseach/* marge reduction  */
+    {
+        margin-left: -30px;
+    }
+    
+    .boutonrecherche/* Bouton rechercher reduction de la largeur  */
+    {
+        width: 50px;
+        border-radius: 15px 15px 15px 15px;     
+    }
+    .iconsnone/* Annulation du Texte "RECHERCHER" sur le bouton    */
+    {
+        display: none;
+    }
+    .versionmobile/* VIsibilite de l'icon  "Loupe" sur le bouton    */
+    {
+         visibility: visible;
+
+    }
+    .recherche
+{
+    border-right: 0px;
+}
+    .Filtreflex
+    {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+

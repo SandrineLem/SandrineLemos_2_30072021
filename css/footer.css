@@ -12,10 +12,12 @@
 {
 	background-color:#F2F2F2;
 	height: 200px;
+	width: 100%;
 	margin-top: 100px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
 	
 }
 
@@ -29,4 +31,29 @@
 	height: 150px;
 	width: 45%;
 	margin-left: 5%;
+	margin-bottom: 10px;
+	padding: 10px;
+	margin-left: 15px;
 }
+
+
+/*Responsive */
+@media screen and ( max-width: 880px )/*correction pour plus petits ecrans */
+{
+	.cadrefooter
+	{
+		flex-direction: column;
+		align-items: flex-start;
+		height: auto;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+	.sousblocfooter
+	{
+		width: auto;
+	}
+	
+}
+

@@ -137,87 +137,33 @@ a
 }
 
 /*Responsive  */
+@media screen and (min-width: 1290px) /* breackpoint pour correction pour plus petits ecrans  */
+{
+	
+	.navbloctaille
+	{
+		width: 100%;
+	}
+	.blochebergact
+	{
+		margin-left:auto;
+	}
 
+}	
 
-@media screen and (max-width: 1290px)
+@media screen and (max-width: 1290px) /* breackpoint pour correction pour plus petits ecrans  */
 {
 	/*Bloc Navigation Herg-Act */
 	.blochebergact
 	{
 		margin-left: 35%;
+		margin-left: auto;
 	}
-}	
-
-.Sizehebergement
-{
-	min-height: auto;
+	
 }	
 
 
-
-
-
-
-
-
-
-
-/*Flex pour les collones des filtres */
-
-@media screen and ( max-width: 1100px )
-
-{ 
-	.Filtreflex/* Flex pour les collones des filtres */
-	{
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	.filtreflexwrapresp /* Flex pour les collones da partir du bloc 2 */
-	{
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	.filtres-iconsles4/* Espace entre les les filtres */
-	{
-		margin-bottom: 20px;
-	}
-
-
-
-
-
-	.contenairesponsive/* le Bloc parent de hebergement et populaire en colone reverse pour passer 
-	populaire au dussus de hebergement  */
-	{
-		flex-direction: column-reverse;
-		width: 100%;
-		justify-content: center;
-		align-content: center;
-	}
-
-	.Sizepopulaire/*  ajuster nos nouvelles tailles */
-	{
-		
-		width: 80%;
-		margin-left: 0;
-		padding: 5%;
-	}
-
-	.blochebergementresp
-	/* ajuster nos nouvelles tailles */                                                                                                                         /* Bloc hebergement on retire le flex 2 pour ajuster nos nouvelles tailles */
-	{
-		display:none ;
-		width: 84.5%;
-		margin-top: 50px;
-		padding: 5%;
-
-	}
-
-}
-
-/*correction pour plus petits ecrans */
-@media screen and ( max-width: 880px )
+@media screen and ( max-width: 880px ) /* breackpoint pour correction pour plus petits ecrans */
 {
 	.navbloctaille/*Barre de navigation ajustement largeur  */
 	{
@@ -226,155 +172,41 @@ a
 
 	.blochebergact
 	{
-		margin-left: 20%; /* Marges extérieur de 20% remis  */
-	}
-
-	.blochebergementresp
-	{
-		height: auto;
-	}
-
-	.sousbloc1heb
-	{
-		flex-direction: column;
-
-	}
-	.sousbloc2heb
-	{
-		flex-direction: column;
-	}
-	.smallcadre
-	{
-		width: 100%;
-		margin-bottom: 50px;
-	}
-	.textsmallhebergement
-	{
-		min-height: auto;
-	}
-	.textsmallpop
-	{
-		min-height: auto;
-	}
-	.Activitees
-	{
-		flex-direction: column;
-		height: auto;
-		align-items: center;
-		margin-left:10px ;
-		margin-right:10px ;
-	}
-	.sousbloccolonne
-	{
-		width: 100%;
-		height: auto;
-		margin-bottom: 50px;
-	}
-	.mediumcadreacolonnecentre
-	{
-		width: 100%;
-		height: auto;
-		margin-bottom: 50PX;
-	}
-	.mediumcadrea
-	{
-		width: 100%;
-		margin-bottom: 50px;
-	}
-	.imgactivite1,.imgactivite2,.imgactivite3,.imgactivite4,.imgactivite5,.imgactivite6
-	{
-		height: 200px;
-	}
-	.cadrefooter
-	{
-		flex-direction: column;
-		align-items: flex-start;
-		height: auto;
-		margin-left: 10px;
-		margin-right:10px ;
-		margin-bottom: 10px;
+		margin-left: 20%; /* Marges extérieures de 20% remises  */
 	}
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 600px) /* "Responsive sur les plus petits écrans " */
 {
 	.blochebergact
 	{
-		order: 1;
-		width: 100%;
-		margin-left: 0;
+		order: 1; /* Order pour changer l'order des deux sous bloc (herge+act) et (s'inscrire ) */
+		width: 100%;/* largeur de 100% pour le sous bloc (herg+acti) */
+		margin-left: 0;/* plus de marge a gauche  */
 	}
 	.blocnavmobile
 	{
-		width: 50%;
+		width: 50%; /* Ajustement de la largeur a 50% di bloc parent */
 		
 	}
-	.sousbloc1
+	.sousbloc1 /* Sous bloc 1 ( logo + heber+acti+s'inscrire) largeur 100% flex row pour aligement horizontalement  */
 	{
-		width: 100%;
-		flex-direction: row;
-		flex-wrap: wrap;	
+		width: 100%; /* largeur 100% flex row pour aligement horizontalement */
+		flex-direction: row; /* flex row pour aligement horizontalement */
+		flex-wrap: wrap; /* flex wrap pour qu'il y ai un retour a la ligne  */
 	}
-	.blocnavmobile :hover
+	.blocnavmobile :hover /* ajout d'une classe pour le survole de l'element (bloc nav) par l'utilisateur  */
 	{
-		border-top: 0;;
+		border-top: 0; /* suppression de bordure top pour le survole de l'element par l'utilisateur */
 	}
-	.hover1:hover
+	.hover1:hover /*modifications pour le survole du bloc (Activitees) par l'utilisateur  */
 	{
-		border-bottom:3px solid #0065FC ;
-		border-top: 0;
+		border-bottom:3px solid #0065FC ;/* ajout de bordure basse pour le survole de l'element par l'utilisateur  */
+		border-top: 0;/* suppression de bordure top pour le survole de l'element par l'utilisateur  */
 	}
-	.bordertop
+	.bordertop/* "Remplacement de la barre bleu en bas " */
 	{
-		border-top: 0;
-		border-bottom: 3px solid #0065FC;
-	}
-/* marge section search  " Trouvez ....." */
-	.search
-	{
-		margin-left: 20px;
-	}
-/* marge reduction  */
-	.cadreseach
-	{
-		margin-left: 40px;
-	}
-	
-	.boutonrecherche
-	{
-		width: 50px;
-	}
-	.iconsnone
-	{
-		display: none;
-	}
-	.boutonrecherche .fa-search
-	{
-    visibility: visible;
+		border-top: 0; /* suppression de bordure top pour le survole de l'element par l'utilisateur  */
+		border-bottom: 3px solid #0065FC;/* ajout de bordure basse pour le survole de l'element par l'utilisateur  */
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
