@@ -9,7 +9,7 @@
 /*Ajout de la taille des liens*/
 .sizeliens
 {
-	font-size: medium;  
+    font-size: medium;  
 }
 
 
@@ -47,6 +47,7 @@ Largeur et hauteur - flex */
     justify-content: center;
     align-items: center;
     border-radius: 10px 0 0 10px;
+    cursor: pointer;
 }
 /* CADRE RECHERCHER "Searchcadre"*/
 
@@ -296,11 +297,3 @@ Largeur et hauteur - flex */
         margin-top: 20px;
     }
 }
-
-
-
-
-
-
-
-
