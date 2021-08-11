@@ -5,8 +5,10 @@
 -marges extérieures en dessous (laisser de l'espace pour le footer)*/
 .Contenair2
 {
-	margin-top:50px;
-	margin-bottom:50px;
+    margin-top:50px;
+    margin-bottom:50px;
+    padding: 15px;
+    padding-right: 15px;
 }
 
 /*Bloc Activités 
@@ -18,11 +20,12 @@
 
 .Activitees
 {
-	width: 100%;
-	height: 600px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
 }
 
 /*Cadre Activités medium "sousParent"
@@ -35,15 +38,18 @@
 -passage de la souris*/
 .mediumcadrea
 {
-	width: 23%;
-	border-radius: 15px;
-	box-shadow: 5px 5px 5px 1px #F2F2F2;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	cursor: pointer;
+    width: 23%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
 }
-
+.mediumcadrea:hover
+{
+    transform: scale(1.1);
+}
 /*Titre photos ajustemenet
 -hauteur 70%
 -largeur 95%
@@ -52,12 +58,12 @@
 -marges intérieures pour l'espace de gauche*/
 .texteactiv
 {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	width: 95%;
-	height: 70px;
-	padding-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 95%;
+    height: 70px;
+    padding-left: 5%;
 }
 
 
@@ -71,32 +77,35 @@ Cadre Activités mediumcolonne "sousParent"
 -alignement du bloc dans son bloc parent*/
 .mediumcadreacolonnecentre 
 {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	border-radius: 15px;
-	box-shadow: 5px 5px 5px 1px #F2F2F2;
-	justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+    justify-content: center;
 }
-
+.mediumcadreacolonnecentre:hover
+{
+    transform: scale(1.1);
+}
 
 /*Sous bloc des 2 photos en colonne*/
 .sousbloccolonne
 {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 23%;
-	height: 600px;
-	cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23%;
+    height: 600px;
+    cursor: pointer;
 }
 
 
 /*desactivation de la decoration des liens et couleur noir texte( soulignement)*/
 a
 {
-	text-decoration: none;
-	color: black;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -209,3 +218,39 @@ a
    height: 530px;
 }
 
+/*Responsive */
+
+@media screen and ( max-width: 880px )/* Breackpoint correction pour plus petits ecrans */
+{
+    .Activitees/*Bloc activitees changement de direction  */
+    {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .sousbloccolonne/*Sous "bloccolonne" d'activitees ajustement hauteur auto marge en dessous pour espacer les cadres photos */
+    {
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .mediumcadreacolonnecentre/*Sous "bloccolonne centre" d'activitees ajustement hauteur auto marge en dessous pour espacer les cadres photos */
+    {
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .mediumcadrea/* Cadre photo largeur 100% pour qu'il occupe tout l'espace et mage du dessous pour espacer les deux sousblocs  */
+    {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .imgactivite1,.imgactivite2,.imgactivite3,.imgactivite4,.imgactivite5,.imgactivite6/* Ajustement de la hauteur des photos  */
+    {
+        height: 200px;
+    }
+    .titreactiviteess
+    {
+        padding-left: 20px;
+    }
+}

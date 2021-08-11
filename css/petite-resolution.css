@@ -1,8 +1,0 @@
-/*Regles de css pour les petits ecrants maximum 1280px du largeur*/
-@media screen and (max-width: 1280px)
-{
-	.marginrespo
-	{
-		margin-left: 35%;
-	}
-}
