@@ -1,11 +1,3 @@
-.entete-section
-{
-    padding:0 ;
-}
-.rechercheSectionTitle
-{
-    margin-bottom: -50px;
-}
 /*Ajout de la taille des liens*/
 .sizeliens
 {
@@ -34,7 +26,6 @@ Largeur et hauteur - flex */
 {
     width: 400px;
     border-radius: 10px;
-    
 }
 /*cadre Geocalisation */
 
@@ -58,8 +49,13 @@ Largeur et hauteur - flex */
     font-size: 18px;
     color: black;
     font-weight: bold;
-
 }
+::placeholder
+{
+    color: black;
+    font-weight: bold;
+}
+
 /* bordure du cadre rechercher  */
 .bordurcadrerecherche
 {
@@ -71,7 +67,7 @@ Largeur et hauteur - flex */
 /*espaceleger entre le cadre et le bouton  */
 .paddingsearch
 {
-    padding-left: 20px; 
+    padding-left: 10px; 
 }
 
 /* " Bouton de recherche " --------------------------------- */
@@ -94,13 +90,13 @@ Largeur et hauteur - flex */
 }
 .search
 {
-    padding: 15px;
+    padding: 10px;
 }
 /*texte rechercher visible version descktop */
 .iconsnone
 {
     visibility: visible;
-    padding-left: 10px;
+    padding-left: 10px
 }
 .versionmobile
 {
@@ -126,8 +122,8 @@ Largeur et hauteur - flex */
 .Filtreflex
 {
     display: flex;
-    align-items: center;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .Filtreflexaround
@@ -243,28 +239,28 @@ Largeur et hauteur - flex */
 
 /*Responsive */
 
-@media screen and ( max-width: 1100px )/*Flex pour les collones des filtres */
 
-{ 
+@media screen and (max-width: 600px)/* "Responsive sur les plus petits écrans " */
+{
     .Filtreflex/* Flex pour les collones des filtres */
     {
         flex-direction: column;
-        align-items: flex-start;
+        align-items:flex-start;
+        flex-wrap: wrap;
     }
     .filtreflexwrapresp /* Flex pour les collones da partir du bloc 2 */
     {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         align-items: flex-start;
     }
     .filtres-iconsles4/* Espace entre les les filtres */
     {
         margin-bottom: 20px;
     }
-}
 
-@media screen and (max-width: 600px)/* "Responsive sur les plus petits écrans " */
-{
+
     .search/* marge section search  " Trouvez ....." */
     {
         margin-left: 20px;

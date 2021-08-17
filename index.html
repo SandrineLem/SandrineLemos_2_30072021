@@ -31,11 +31,11 @@
 							<div class="sousbloclien bordertop blocnavmobile">
 								<a class="colorlien" href="#hebergement">Hébergements</a>
 							</div>
-		    				<div class="sousbloclien hover1">
+		    				<div class="sousbloclien hover1 blocactinavresp">
 		    					<a class="colorlienBlack hovercolor1 fixed" href="#activites"> Activités</a>
 		    				</div>
 		    			</div>	
-		    			<div class="sousbloclien">
+		    			<div class="sousbloclien blocactivnav">
 		    				<a class="element3 colorlien bordertoptransp hovercolor2" href="reserviaInscription.html">S'inscrire</a>
 		    			</div>
 		    	</div>	
@@ -52,50 +52,47 @@
 					<div class="cadreseach borderseach">
 						<div class="iconsize"><i class="fas fa-map-marker-alt fa-lg iconsgeo"></i>
 						</div>
-
-
 						<form>
 							<input class="recherche bordurcadrerecherche paddingsearch" type="search" 
-							value="Marseille,France">
+							placeholder="Marseille,France"/>
 						</form>
-						<button class="boutonrecherche">
-							<span class="iconsnone">Rechercher</span>
-							<span class="versionmobile"><i class="fas fa-search"></i></span>
-						</button>
+						<form>
+							<button class="boutonrecherche" type="submit">
+								<span class="iconsnone">Rechercher</span>
+								<span class="versionmobile"><i class="fas fa-search"></i></span>
+							</button>
+						</form>
 					</div>
 
        							
 					
-       				<div class="mobileflexwrap Filtreflex Filtres">
+       				<div class=" Filtreflex Filtres">
 
        					<div class="filtretilte"><h3>Filtres</h3></div>
 
-       					<!--Ajout de 2 bloc 1(2filtres) et 2bloc (2filtre)-->
+       					<!--Ajout de 2 bloc 1er bloc(2filtres) et 2emebloc (2filtre) pour le responsive-->
        					<!--Bloc 1-->
        						<div class="Filtreflexaround">
-       							<div class="filtres-iconsles4 filtremargeresp">
+       							<div class="filtres-iconsles4 ">
        								<i class="fas fa-money-bill-wave fa-lg filtreicon"></i>
        								<div class="textefiltre">Economique</div>
        							</div>
-       						
-
-       						
-       							<div class="filtres-iconsles4 filtremargeresp">
+       							
+       							<div class="filtres-iconsles4 ">
        								<i class="fas fa-child fa-lg filtreicon"></i>
        								<div class="textefiltre">Famillial</div>
        							</div>
+       							
        						</div>
        					
        					<!--Bloc 2-->
        						<div class="filtreflexwrapresp Filtreflexaround">
-       							<div class="filtres-iconsles4 filtremargeresp">
+       							<div class="filtres-iconsles4 ">
        								<i class=" fas fa-heart fa-lg filtreicon "></i>
        								<div class="textefiltre">Romantique</div>
        							</div>
-							
-					
        							
-       							<div class="filtres-iconsles4 filtremargeresp">
+       							<div class="filtres-iconsles4">
        								<i class="fas fa-dog fa-lg filtreicon"></i>
        								<div class="textefiltre">Animaux Autorisés</div>
        							</div>
@@ -118,12 +115,14 @@
 
 			<section id="hebergement" class="contenair contenairesponsive">
 				<div class="Sizehebergement blochebergement blochebergementresp">
-					<h3>Hébergements à Marseille</h3>
+					<div class="sousbloctitreheb">
+						<h3>Hébergements à Marseille</h3>
+					</div>
 					<div class="sousbloc1heb">
 						<div class="smallcadre">
 							<div class="imghebergement1"></div>
 							<div class="textsmallhebergement">
-								<h4><a class="hovercolor1" href="traitement.php">Auberge la Cannebière</a></h4>
+								<h4><a class="hovercolor1" href="traitement.php">Auberge&nbsp;la&nbsp;Cannebière&nbsp;</a></h4>
 								<p>Nuit à partir de <strong>25€</strong></p>
 								<div>
 									<i class="fas fa-star colorbleu"></i>
@@ -207,7 +206,7 @@
 							</div>
 						</div>
 					</div>
-					<h3 class="textefonce">Afficher plus </h3>		
+					<h3 class="textefonce"><a class="afficheplus" href="hebergementafficheplus.html">Afficher plus</a></h3>		
 				</div>	
 					
 
@@ -221,9 +220,9 @@
 						<div class="smallcadrepop">
 							<div class="imgpopulaire1"></div>
 							<div class="textsmallpop">
-								<h4><a class="hovercolor1" href="traitement.php">Hôtel Le soleil du matin</a></h4>
+								<h4><a class="hovercolor1" href="traitement.php">Hôtel Le soleil du<br>matin</a></h4>
 								<p>Nuit à partir de 128<strong>€</strong></p>
-								<div>
+								<div class="Etoilespop">
 									<i class="fas fa-star colorbleu"></i>
 									<i class="fas fa-star colorbleu"></i>
 									<i class="fas fa-star colorbleu"></i>
@@ -235,9 +234,9 @@
 						<div class="smallcadrepop">
 							<div class="imgpopulaire2"></div>
 							<div class="textsmallpop">
-								<h4><a class="hovercolor1" href="traitement.php">Au coeur de l'eau Chambres d'hôtes</a></h4>
+								<h4><a class="hovercolor1" href="traitement.php">Au coeur de l'eau <br>Chambres d'hôtes</a></h4>
 								<p>Nuit à partir de 71<strong>€</strong></p>
-								<div>
+								<div class="Etoilespop1 Etoilespop">
 									<i class="fas fa-star colorbleu"></i>
 									<i class="fas fa-star colorbleu"></i>
 									<i class="fas fa-star colorbleu"></i>
@@ -249,9 +248,9 @@
 						<div class="smallcadrepop">
 							<div class="imgpopulaire3"></div>
 							<div class="textsmallpop">
-								<h4><a class="hovercolor1" href="traitement.php">Hôtel Tout bleu et Blanc</a></h4>
+								<h4><a class="hovercolor1" href="traitement.php">Hôtel Tout bleu<br>et Blanc</a></h4>
 								<p>Nuit à partir de 68<strong>€</strong></p>
-								<div>
+								<div class="Etoilespop">
 									<i class="fas fa-star colorbleu"></i>
 									<i class="fas fa-star colorbleu"></i>
 									<i class="fas fa-star colorbleu"></i>
@@ -300,26 +299,26 @@
 					</div>
 				</div>
 			</section>
-			<footer>
-				<div class="cadrefooter">
-					<div class="sousblocfooter">
-						<h4><strong>A propos</strong></h4>
-						<p>Fonctionnement du site </p>
-						<p>Conditions généréles de vente</p>
-						<p>Données et confidentialité</p>
-					</div>
-					<div class="sousblocfooter">
-						<h4><strong>Nos hébergements</strong></h4>
-						<p>Charte qualité</p>
-						<p>Soumettre votre hôtel</p>
-					</div>
-					<div class="sousblocfooter">
-						<h4><strong>Assistance</strong></h4>
-						<p>Centre d'aide</p>
-						<p>Nous contacter</p>
-					</div>
+			
+			<footer class="cadrefooter">
+				<div class="sousblocfooter">
+					<h4><strong>A propos</strong></h4>
+					<p><a href="#"class="lienfooter">Fonctionnement du site</a></p>
+					<p><a href="#"class="lienfooter">Conditions généréles de vente</a></p>
+					<p><a href="#"class="lienfooter">Données et confidentialité</a></p>
+				</div>
+				<div class="sousblocfooter">
+					<h4><strong>Nos hébergements</strong></h4>
+					<p><a href="#" class="lienfooter">Charte qualité</a></p>
+					<p><a href="#" class="lienfooter">Soumettre votre hôtel</a></p>
+				</div>
+				<div class="sousblocfooter margfooterresp">
+					<h4><strong>Assistance</strong></h4>
+					<p><a href="#" class="lienfooter"> Centre d'aide</a></p>
+					<p><a href="#" class="lienfooter">Nous contacter</a></p>
 				</div>
 			</footer>
+			
 		</div>
 	</body>
 </html>

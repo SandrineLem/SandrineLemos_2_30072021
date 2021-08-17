@@ -24,8 +24,16 @@ body, html,#bloc_page
 	font-family: Raleway-Regular, Arial, Arial;
 	margin: 0;
 	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;	
 }
- 
+ .#bloc_page
+ {
+ 	margin: 0;
+	padding: 0;
+	justify-content: center;
+ }
 /*LES blocs  */
 
 
@@ -71,9 +79,7 @@ centrer avec le logo---*/
 .blochebergact
 {
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	margin-left: 60%;
 }
 
 /*Taille png logo */
@@ -167,12 +173,12 @@ a
 {
 	.navbloctaille/*Barre de navigation ajustement largeur  */
 	{
-		width: 90%; /*Barre de navigation ajustement largeur  */
+		width: 100%; /*Barre de navigation ajustement largeur  */
 	}
 
 	.blochebergact
 	{
-		margin-left: 20%; /* Marges extérieures de 20% remises  */
+		 /* Marges extérieures de 20% remises  */
 	}
 }
 
@@ -186,7 +192,7 @@ a
 	}
 	.blocnavmobile
 	{
-		width: 50%; /* Ajustement de la largeur a 50% di bloc parent */
+		width: 100%; /* Ajustement de la largeur a 50% di bloc parent */
 		
 	}
 	.sousbloc1 /* Sous bloc 1 ( logo + heber+acti+s'inscrire) largeur 100% flex row pour aligement horizontalement  */
@@ -199,14 +205,22 @@ a
 	{
 		border-top: 0; /* suppression de bordure top pour le survole de l'element par l'utilisateur */
 	}
+	.hover1
+	{
+		border-bottom:3px solid #f2f2f2;
+	}
 	.hover1:hover /*modifications pour le survole du bloc (Activitees) par l'utilisateur  */
 	{
-		border-bottom:3px solid #0065FC ;/* ajout de bordure basse pour le survole de l'element par l'utilisateur  */
+		border-bottom:3px solid #0065FC;/* ajout de bordure basse pour le survole de l'element par l'utilisateur  */
 		border-top: 0;/* suppression de bordure top pour le survole de l'element par l'utilisateur  */
 	}
 	.bordertop/* "Remplacement de la barre bleu en bas " */
 	{
 		border-top: 0; /* suppression de bordure top pour le survole de l'element par l'utilisateur  */
 		border-bottom: 3px solid #0065FC;/* ajout de bordure basse pour le survole de l'element par l'utilisateur  */
+	}
+	.blocactinavresp
+	{
+		width: 100%;
 	}
 }

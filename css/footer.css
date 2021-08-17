@@ -35,7 +35,10 @@
 	padding: 10px;
 	margin-left: 15px;
 }
-
+.lienfooter:hover
+{
+	text-decoration:underline ;
+}
 
 /*Responsive */
 @media screen and ( max-width: 880px )/*correction pour plus petits ecrans */
@@ -45,14 +48,18 @@
 		flex-direction: column;
 		align-items: flex-start;
 		height: auto;
-		width: 100%;
+		width: auto;
 		margin-left: 0;
 		margin-right: 0;
 		margin-bottom: 0;
+		margin-top: 30px;	
 	}
 	.sousblocfooter
 	{
 		width: auto;
 	}
-	
+	.margfooterresp
+	{
+		margin-top: -30px;
+	}
 }
