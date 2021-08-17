@@ -86,7 +86,7 @@ et extrémitées
     min-width: 30%;
     height: auto;
     background-color: white;
-    padding: 1%;
+    padding: 1% 1% 0 1%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -97,7 +97,7 @@ et extrémitées
 }
 .smallcadre:hover
 {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 /*desactivation de la decoration des liens et couleur noir texte( soulignement) */
 a
@@ -106,7 +106,10 @@ a
     color: black;
 }
 
-
+.afficheplus:hover
+{
+    color: #0065FC;
+}
 /*TEXTE DESCRIPTION photos dans smallcadre Hebergement
 -largeur de 90% du cadre  */
 .textsmallhebergement
@@ -243,10 +246,18 @@ a
         justify-content: center;
         align-content: center;
     }
+    .contenair
+    {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
     .blochebergementresp
     /* ajuster nos nouvelles tailles */                                                                                                                         /* Bloc hebergement on retire le flex 2 pour ajuster nos nouvelles tailles */
     {
-        width: 84.5%;
+        width: 80%;
+        margin-left: 0;
+        padding: 5%;
         margin-top: 50px;
         margin-left:2px ;
         margin-right: 2px;
@@ -259,6 +270,8 @@ a
     .blochebergementresp/* Hauteur automatique */
     {
         height: auto;
+        width: 100%;
+        justify-content: center;
     }
 
     .sousbloc1heb/* Changement de la position du sousbloc1 hebergement pour les cadre photos  */
@@ -272,8 +285,10 @@ a
     }
     .smallcadre/* cadre photo largeur a 100% pour qu'il occupe tout l'espace de son bloc( sous boc 1 et 2 ) */
     {
-        width: 100%;
-        margin-bottom: 50px;
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+        margin-right: 30px;
     }
     .textsmallhebergement/* Minimun d'hauteur automatique pour la decription des cartes */
     {

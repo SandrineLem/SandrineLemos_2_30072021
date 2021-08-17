@@ -7,7 +7,7 @@
 .Sizepopulaire
 {
     flex: 1;
-  	 height: 650px;
+     height: 650px;
     margin-left: 20px;
     border-radius: 10px;
     background-color:#F2F2F2 ;
@@ -20,9 +20,9 @@
 /*Sous bloc ( titre + icons) Les plus populaires */
 .sousbloc3titreicon
 {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -39,29 +39,33 @@
 -passage de la souris*/
 .smallcadrepop
 {
-	display: flex;
-	justify-content: center;
-	background-color: white;
-	padding: 2% 0 2% 2%;
-	border-radius: 20px;
-	margin-bottom: 20px;
-	height: 100%;
-	box-shadow: 0 0 16px #0000002e;
-	cursor: pointer;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 2% 0 2% 2%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    height: 100%;
+    box-shadow: 0 0 16px #0000002e;
+    cursor: pointer;
 }
 .smallcadrepop:hover
 {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 /*TEXTE DESCRIPTION photos dans smallcadre Populaire
 -largeur de 60% du cadre
 -marges intérieues de 5%*/
 .textsmallpop
 {
-	width: 60%;
-	padding-left: 5%;
+    width: 60%;
+    padding-left: 5%;
 }
 
+.Etoilespop
+{
+    margin-top: 30px;
+}
 
 /* sousbloc1 et 2 "Populaire" 
 - flex en colonnes 
@@ -70,17 +74,17 @@
 
 .sousblocpop12
 {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 /*desactivation de la decoration des liens et couleur noir texte( soulignement)*/
 a
 {
-	text-decoration: none;
-	color: black;
+    text-decoration: none;
+    color: black;
 }
 
 /* Image POPULAIRE "element 1"
@@ -143,20 +147,65 @@ a
 @media screen and ( max-width: 1100px ) /*Breakpoint pour ajustement des blocs */
 
 { 
-	.Sizepopulaire/*  ajuster nos nouvelles tailles */
-	{
-		
-		width: 80%;
-		margin-left: 0;
-		padding: 5%;
-	}
+
+    .Sizepopulaire/*  ajuster nos nouvelles tailles */
+    {
+        
+        width: 80%;
+         width: 80%;
+       margin-left: 0;
+       padding: 5%;
+       margin-top: 50px;
+       margin-left:2px ;
+       margin-right: 2px;
+        
+        
+    }
+    .smallcadrepop
+    {
+    padding: 1% 0 1% 1%;    
+    }
 }
 
 
 @media screen and ( max-width: 880px )/*correction pour plus petits ecrans */
 {
-	.textsmallpop/*Minimum hauteur automatique */
-	{
-		min-height: auto;
-	}
+    .textsmallpop/*Minimum hauteur automatique */
+    {
+        min-height: auto;
+    }
+    .Sizepopulaire
+    {
+    flex: 1;
+     height: 650px;
+     padding-left: 20px;
+     width: 100%;
+    border-radius:0;
+    padding-left: 20px;
+    padding-right: 20px; 
+    padding-bottom: 20px;
+    }
+
+    .smallcadrepop
+{
+    width: 90%;
+}   
+    .sousbloc3titreicon
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.Etoilespop1
+{
+    margin-top:30px;
+}
+
+
+
+
+
+
+
 }
