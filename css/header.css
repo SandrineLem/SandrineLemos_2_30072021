@@ -1,7 +1,4 @@
-/*couleur maquette----
------
------------------------------------->
- ----------------------------*/
+/*couleur maquette*/
 .colorbleu
 {
 	color: #0065FC;
@@ -17,7 +14,7 @@
 	color: #f2f2f2;
 }	
 
-/*Ajout de la police à tout le contenu de la page et marges intérieures et extérieures----------------------------*/
+/*Ajout de la police à tout le contenu de la page et marges intérieures et extérieures*/
 
 body, html,#bloc_page
 {
@@ -28,17 +25,10 @@ body, html,#bloc_page
 	margin-right: 0;
 	padding-left: 0;	
 }
- .#bloc_page
- {
- 	margin: 0;
-	padding: 0;
-	justify-content: center;
- }
-/*LES blocs  */
+/*LES blocs*/
+ 
 
-
-/* Bloc parent espacement des 3 liens et du logo  */
-.sousbloc1
+.sousbloc1 /*Bloc parent espacement des 3 liens et du logo*/
 {
 	display: flex;
 	justify-content: space-between;
@@ -53,20 +43,20 @@ body, html,#bloc_page
 
 
 /*flex box pour le Bloc des 3 liens ;
-centrer avec le logo---*/
+centrer avec le logo*/
 .blocliens
 {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
-/*Largeur  Bloc du logo et des 3 liens ;
-centrer avec le logo---*/
+/*Largeur  Bloc du logo et des 3 liens;
+centrer avec le logo*/
 .taillebloclien
 {
 	width: 100%;
 }
-/* sous bloc ( bloc de chaque lien )  */
+/* sous bloc ( bloc de chaque lien )*/
 .sousbloclien
 {
 	width: 140px;
@@ -75,7 +65,7 @@ centrer avec le logo---*/
 	justify-content: center;
 	align-items: center;
 }
-/* Bloc Herbergement + activites pour faire le responsive  */
+/* Bloc Herbergement + activites pour faire le responsive*/
 .blochebergact
 {
 	display: flex;
@@ -122,7 +112,7 @@ centrer avec le logo---*/
 	color: #0065FC;
 }
 
-/*Lien "s'inscrire" ecriture bleufoncé au survol souris */
+/*Lien "s'inscrire" ecriture bleufoncé au survol souris*/
 .hovercolor2:hover
 {
 	color: #0065FC;
@@ -136,14 +126,14 @@ centrer avec le logo---*/
 }
 
 
-/*desactivation de la decoration des liens ( soulignement) */
+/*desactivation de la decoration des liens ( soulignement)*/
 a
 {
 	text-decoration: none;
 }
 
 /*Responsive  */
-@media screen and (min-width: 1290px) /* breackpoint pour correction pour plus petits ecrans  */
+@media screen and (min-width: 1290px) /*breackpoint pour correction pour plus petits ecrans*/
 {
 	
 	.navbloctaille
@@ -157,7 +147,7 @@ a
 
 }	
 
-@media screen and (max-width: 1290px) /* breackpoint pour correction pour plus petits ecrans  */
+@media screen and (max-width: 1290px) /*breackpoint pour correction pour plus petits ecrans*/
 {
 	/*Bloc Navigation Herg-Act */
 	.blochebergact
@@ -169,26 +159,26 @@ a
 }	
 
 
-@media screen and ( max-width: 880px ) /* breackpoint pour correction pour plus petits ecrans */
+@media screen and ( max-width: 880px ) /*breackpoint pour correction pour plus petits ecrans*/
 {
-	.navbloctaille/*Barre de navigation ajustement largeur  */
+	.navbloctaille/*Barre de navigation ajustement largeur*/
 	{
-		width: 100%; /*Barre de navigation ajustement largeur  */
+		width: 100%; /*Barre de navigation ajustement largeur*/
 	}
 
 	.blochebergact
 	{
-		 /* Marges extérieures de 20% remises  */
+		 /*Marges extérieures de 20% remises*/
 	}
 }
 
-@media screen and (max-width: 600px) /* "Responsive sur les plus petits écrans " */
+@media screen and (max-width: 600px) /*"Responsive sur les plus petits écrans "*/
 {
 	.blochebergact
 	{
-		order: 1; /* Order pour changer l'order des deux sous bloc (herge+act) et (s'inscrire ) */
-		width: 100%;/* largeur de 100% pour le sous bloc (herg+acti) */
-		margin-left: 0;/* plus de marge a gauche  */
+		order: 1; /*Order pour changer l'order des deux sous bloc (herge+act) et (s'inscrire ) */
+		width: 100%;/*largeur de 100% pour le sous bloc (herg+acti)*/
+		margin-left: 0;/*plus de marge a gauche*/
 	}
 	.blocnavmobile
 	{
@@ -199,25 +189,25 @@ a
 	{
 		width: 100%; /* largeur 100% flex row pour aligement horizontalement */
 		flex-direction: row; /* flex row pour aligement horizontalement */
-		flex-wrap: wrap; /* flex wrap pour qu'il y ai un retour a la ligne  */
+		flex-wrap: wrap; /*flex wrap pour qu'il y ai un retour a la ligne*/
 	}
-	.blocnavmobile :hover /* ajout d'une classe pour le survole de l'element (bloc nav) par l'utilisateur  */
+	.blocnavmobile :hover /* ajout d'une classe pour le survole de l'element (bloc nav) par l'utilisateur*/
 	{
-		border-top: 0; /* suppression de bordure top pour le survole de l'element par l'utilisateur */
+		border-top: 0; /*suppression de bordure top pour le survole de l'element par l'utilisateur*/
 	}
 	.hover1
 	{
 		border-bottom:3px solid #f2f2f2;
 	}
-	.hover1:hover /*modifications pour le survole du bloc (Activitees) par l'utilisateur  */
+	.hover1:hover /*modifications pour le survole du bloc (Activitees) par l'utilisateur*/
 	{
-		border-bottom:3px solid #0065FC;/* ajout de bordure basse pour le survole de l'element par l'utilisateur  */
-		border-top: 0;/* suppression de bordure top pour le survole de l'element par l'utilisateur  */
+		border-bottom:3px solid #0065FC;/* ajout de bordure basse pour le survole de l'element par l'utilisateur*/
+		border-top: 0;/*suppression de bordure top pour le survole de l'element par l'utilisateur*/
 	}
 	.bordertop/* "Remplacement de la barre bleu en bas " */
 	{
-		border-top: 0; /* suppression de bordure top pour le survole de l'element par l'utilisateur  */
-		border-bottom: 3px solid #0065FC;/* ajout de bordure basse pour le survole de l'element par l'utilisateur  */
+		border-top: 0; /*suppression de bordure top pour le survole de l'element par l'utilisateur*/
+		border-bottom: 3px solid #0065FC;/*ajout de bordure basse pour le survole de l'element par l'utilisateur*/
 	}
 	.blocactinavresp
 	{
