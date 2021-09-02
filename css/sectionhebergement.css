@@ -262,6 +262,13 @@ a
         margin-left:2px ;
         margin-right: 2px;
     }
+    /*Ajout de la hauteur , correction taille  d'image arrière plan et posistion en centre */
+    .imghebergement1,.imghebergement2,.imghebergement3,.imghebergement4,.imghebergement5,.imghebergement6
+    {
+        height: 200px;
+        background-size: auto;
+        background-position: center; 
+    }
 }
 
 
